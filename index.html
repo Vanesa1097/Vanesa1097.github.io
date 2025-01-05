@@ -98,3 +98,145 @@
     </footer>
 </body>
 </html>
+te digo como quiero en la pagina de inicio quiero el nombre del restaurante en medio letras mayúsculas debajo del logo un pequeño video de un fuego moviéndose la parrilla, en la esquina superior izquierda un menú con el símbolo de las tres rayas horizontales, que ese botón te lleve al menú donde quiero que en medio aparezca inicio, debajo carta y debajo carta de vinos. luego una x para cerrar el menú. por último debajo del vidrio quiero un fondo clarito con 9 imágenes en el centro y al final una especie de información de horario, contacto y dirección en horizontal. y el footer de los derechos reservas del año actual del restaurante
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Pepito Grillo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .menu-icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .menu a {
+            display: block;
+            margin: 20px 0;
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+        }
+        .menu .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .hero {
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        .hero video {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            max-width: 200px;
+            height: auto;
+        }
+        .info {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <h1>RESTAURANTE PEPITO GRILLO</h1>
+    </header>
+    <div class="menu" id="menu">
+        <div class="close" onclick="toggleMenu()">✖</div>
+        <a href="#inicio">Inicio</a>
+        <a href="#carta">Carta</a>
+        <a href="#carta-vinos">Carta de Vinos</a>
+    </div>
+    <div class="hero">
+        <video autoplay muted loop>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/200" alt="Imagen 1">
+        <img src="https://via.placeholder.com/200" alt="Imagen 2">
+        <img src="https://via.placeholder.com/200" alt="Imagen 3">
+        <img src="https://via.placeholder.com/200" alt="Imagen 4">
+        <img src="https://via.placeholder.com/200" alt="Imagen 5">
+        <img src="https://via.placeholder.com/200" alt="Imagen 6">
+        <img src="https://via.placeholder.com/200" alt="Imagen 7">
+        <img src="https://via.placeholder.com/200" alt="Imagen 8">
+        <img src="https://via.placeholder.com/200" alt="Imagen 9">
+    </div>
+    <div class="info">
+        <p>Horario: Lunes a Viernes 12:00 - 22:00</p>
+        <p>Contacto: 123-456-789</p>
+        <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+    </div>
+    <footer>
+        <p>© 2025 Restaurante Pepito Grillo. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
