@@ -66,22 +66,24 @@
             height: auto;
         }
         .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
             padding: 20px;
             background-color: #f0f0f0;
         }
         .gallery img {
-            width: 30%;
-            margin: 10px;
-            max-width: 200px;
+            width: 100%;
             height: auto;
         }
         .info {
-            text-align: center;
+            display: flex;
+            justify-content: space-around;
             padding: 20px;
             background-color: #f8f8f8;
+            background-image: url('https://via.placeholder.com/1200x400'); /* Fondo con patrón */
+            background-size: cover;
+            color: #333;
         }
         footer {
             background-color: #333;
