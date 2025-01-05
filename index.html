@@ -44,7 +44,7 @@
         .menu a {
             display: block;
             margin: 20px 0;
-            font-size: 24px;
+            font-size: 36px;
             text-decoration: none;
             color: white;
         }
@@ -69,8 +69,11 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
+            justify-content: center;
             padding: 20px;
             background-color: #f0f0f0;
+            background-image: url('https://via.placeholder.com/1200x400'); /* Fondo de madera claro */
+            background-size: cover;
         }
         .gallery img {
             width: 100%;
@@ -100,9 +103,11 @@
     </header>
     <div class="menu" id="menu">
         <div class="close" onclick="toggleMenu()">✖</div>
-        <a href="#inicio">Inicio</a>
-        <a href="#carta">Carta</a>
-        <a href="#carta-vinos">Carta de Vinos</a>
+        <div style="display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: center;">
+            <a href="#inicio">Inicio</a>
+            <a href="#carta">Carta</a>
+            <a href="#carta-vinos">Carta de Vinos</a>
+        </div>
     </div>
     <div class="hero">
         <video autoplay muted loop>
